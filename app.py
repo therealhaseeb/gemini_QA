@@ -27,6 +27,7 @@ async def generate(req: GenerateRequest):
     return GenerateResponse(model=model_name, text=text)
 
 
+
 @app.get("/")
 async def health():
     return {"status": "ok", "default_model": DEFAULT_MODEL}
